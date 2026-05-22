@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Unidad 2 - Estructura y funcionamiento de la CPU</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+       <!-- Topbar Start -->
+    <div class="container-fluid">
+        
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Arquitectura </span> De Computadoras</h1>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+ <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="unidad1.html" class="nav-item nav-link">Unidad 1</a>
+                    <a href="unidad2.html" class="nav-item nav-link">Unidad 2</a>
+                    <a href="unidad3.html" class="nav-item nav-link">Unidad 3</a>
+                    <a href="unidad4.html" class="nav-item nav-link">Unidad 4</a>
+                    <a href="practicas_curso.html" class="nav-item nav-link">Practicas
+                    </a>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->  
+
+
+    <!-- Unit Header Start -->
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                    <h4 class="text-secondary mb-3">Unidad 3</h4>
+                    <h1 class="display-4 mb-4"><span class="text-primary">Selección de componentes</span> para ensamble de <span class="text-secondary">equipo de cómputo</span></h1>
+                    <h5 class="text-muted mb-3">En esta unidad se estudia cómo elegir los componentes adecuados para armar una computadora funcional, compatible y orientada a un propósito específico.</h5>
+                    <p class="mb-4">Seleccionar componentes no consiste únicamente en comprar las piezas más potentes. Es necesario analizar compatibilidad, rendimiento, costo, consumo de energía, capacidad de expansión y el ambiente donde el equipo será utilizado.</p>
+                    <ul class="list-inline">
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Identificación del chipset y su función en la tarjeta madre</h5></li>
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Selección de componentes según la aplicación del equipo</h5></li>
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Análisis de ambientes de servicio y condiciones de uso</h5></li>
+                    </ul>
+                    <a href="#temario-unidad-3" class="btn btn-lg btn-primary mt-3 px-4">Ver temario</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row px-3">
+                        <div class="col-12 p-0">
+                            <img class="img-fluid w-100" src="img/q.webp" alt="Imagen sobre ensamble de equipo de cómputo">
+                        </div>
+                        <div class="col-6 p-0">
+                            <img class="img-fluid w-100" src="img/pp.jpeg" alt="Imagen de componentes internos de computadora">
+                        </div>
+                        <div class="col-6 p-0">
+                            <img class="img-fluid w-100" src="img/g.webp" alt="Imagen de tarjeta madre y hardware">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Unit Header End -->
+
+
+    <!-- Main Concepts Start -->
+    <div class="container py-5" id="temario-unidad-3">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">Temario de la unidad</h4>
+            <h1 class="display-4 m-0">Componentes para el <span class="text-primary">ensamble</span></h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-3 p-sm-5 h-100">
+                    <h3 class="fa fa-microchip display-3 font-weight-normal text-secondary mb-3"></h3>
+                    <h3 class="mb-3">3.1 Chip Set</h3>
+                    <p>El chipset es el conjunto de circuitos integrados de la tarjeta madre que permite la comunicación entre el procesador, la memoria RAM, el almacenamiento, las tarjetas de expansión y los dispositivos de entrada y salida.</p>
+                    <p class="m-0">Su importancia está en que define qué procesadores son compatibles, qué tipo de memoria se puede instalar, cuántos puertos o ranuras estarán disponibles y qué tecnologías podrá soportar el equipo.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-3 p-sm-5 h-100">
+                    <h3 class="fa fa-desktop display-3 font-weight-normal text-secondary mb-3"></h3>
+                    <h3 class="mb-3">3.2 Aplicaciones</h3>
+                    <p>Las aplicaciones se refieren al uso principal que tendrá el equipo de cómputo. No se requieren los mismos componentes para una computadora de oficina, diseño gráfico, programación, videojuegos, edición de video o uso industrial.</p>
+                    <p class="m-0">Definir la aplicación ayuda a seleccionar correctamente el procesador, la memoria RAM, la tarjeta gráfica, el almacenamiento, la fuente de poder y el sistema de enfriamiento.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-3 p-sm-5 h-100">
+                    <h3 class="fa fa-server display-3 font-weight-normal text-secondary mb-3"></h3>
+                    <h3 class="mb-3">3.3 Ambientes de servicio</h3>
+                    <p>El ambiente de servicio es el lugar y las condiciones donde el equipo funcionará. Incluye factores como temperatura, polvo, humedad, ventilación, disponibilidad eléctrica, espacio físico y tiempo de uso continuo.</p>
+                    <p class="m-0">Un equipo usado en una oficina, laboratorio, taller industrial o centro de datos puede requerir componentes distintos, mayor protección, mejor enfriamiento o mantenimiento más frecuente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Concepts End -->
+
+
+    <!-- Chipset Details Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <img class="img-fluid w-100" src="img/madre.jpg" alt="Imagen de chipset o tarjeta madre">
+                </div>
+                <div class="col-lg-7 px-3 px-lg-5">
+                    <h4 class="text-secondary mb-3">3.1 Chip Set</h4>
+                    <h1 class="display-4 mb-4">El centro de comunicación de la <span class="text-primary">tarjeta madre</span></h1>
+                    <p class="mb-4">El chipset trabaja como un puente de comunicación entre los elementos principales del equipo. Aunque muchas funciones que antes estaban en el chipset ahora se integran dentro del procesador, este sigue siendo clave para determinar las capacidades generales de la motherboard.</p>
+                    <div class="row py-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-plug font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Compatibilidad</h5>
+                                    <p class="m-0">Define qué CPU, RAM y dispositivos puede utilizar la tarjeta madre.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-random font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Comunicación</h5>
+                                    <p class="m-0">Coordina el intercambio de datos entre componentes internos y externos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-hdd font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Expansión</h5>
+                                    <p class="m-0">Determina ranuras, puertos, almacenamiento y conectividad disponible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-tachometer-alt font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Rendimiento</h5>
+                                    <p class="m-0">Influye en la velocidad, estabilidad y capacidad de actualización del equipo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chipset Details End -->
+
+
+    <!-- Applications Start -->
+    <div class="container py-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">3.2 Aplicaciones</h4>
+            <h1 class="display-4 m-0">Elegir componentes según el <span class="text-primary">uso</span></h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-file-alt text-secondary mr-2"></i>Oficina y estudio</h4>
+                        <p>Para tareas como documentos, navegación, clases en línea, correo y videollamadas, se recomienda un equipo equilibrado, con procesador de gama básica o media, memoria suficiente y almacenamiento SSD.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-paint-brush text-secondary mr-2"></i>Diseño y multimedia</h4>
+                        <p>Para edición de imágenes, video, modelado 3D o animación, se requiere mayor capacidad de procesamiento, más memoria RAM, una tarjeta gráfica adecuada y almacenamiento rápido.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-gamepad text-secondary mr-2"></i>Videojuegos</h4>
+                        <p>En equipos para videojuegos se da prioridad a la tarjeta gráfica, el procesador, la memoria RAM, la ventilación y una fuente de poder confiable que soporte la demanda energética.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-code text-secondary mr-2"></i>Programación</h4>
+                        <p>Para desarrollo de software se recomienda buena cantidad de RAM, almacenamiento SSD y un procesador capaz de ejecutar entornos de desarrollo, bases de datos o máquinas virtuales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-industry text-secondary mr-2"></i>Uso industrial</h4>
+                        <p>En ambientes industriales se valoran la resistencia, estabilidad, protección contra polvo o temperatura, conectividad especializada y capacidad de trabajar durante largos periodos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-network-wired text-secondary mr-2"></i>Servidores</h4>
+                        <p>Un servidor necesita disponibilidad, capacidad de almacenamiento, redundancia, buena refrigeración y componentes preparados para operar de forma continua y atender múltiples usuarios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Applications End -->
+
+
+    <!-- Service Environments Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">3.3 Ambientes de servicio</h4>
+                <h1 class="display-4 m-0">Condiciones que afectan el <span class="text-primary">funcionamiento</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center bg-white p-4 h-100">
+                        <h1 class="fa fa-temperature-high text-secondary mb-3"></h1>
+                        <h5>Temperatura</h5>
+                        <p class="m-0">El calor excesivo reduce el rendimiento y puede dañar componentes. Por eso es importante considerar ventiladores, disipadores y flujo de aire.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center bg-white p-4 h-100">
+                        <h1 class="fa fa-wind text-secondary mb-3"></h1>
+                        <h5>Polvo y ventilación</h5>
+                        <p class="m-0">El polvo puede obstruir ventiladores y elevar la temperatura. Un buen gabinete y mantenimiento ayudan a prolongar la vida útil del equipo.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center bg-white p-4 h-100">
+                        <h1 class="fa fa-bolt text-secondary mb-3"></h1>
+                        <h5>Energía eléctrica</h5>
+                        <p class="m-0">Las variaciones de voltaje pueden causar fallas. Se recomienda una fuente de poder adecuada, regulador o sistema de respaldo según el caso.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center bg-white p-4 h-100">
+                        <h1 class="fa fa-clock text-secondary mb-3"></h1>
+                        <h5>Tiempo de operación</h5>
+                        <p class="m-0">Un equipo que trabaja muchas horas al día necesita componentes más confiables, mejor refrigeración y mantenimiento preventivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Environments End -->
+
+
+    <!-- Summary Start -->
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">Resumen de la unidad</h4>
+                <h1 class="display-4 mb-4">Criterios para un buen <span class="text-primary">ensamble</span></h1>
+                <p>Para ensamblar un equipo de cómputo se debe partir de una necesidad concreta. A partir de ella, se eligen los componentes que ofrecen el rendimiento, compatibilidad y durabilidad adecuados.</p>
+                <p>El chipset permite conocer las capacidades de la tarjeta madre; las aplicaciones indican qué nivel de hardware se necesita; y los ambientes de servicio ayudan a decidir si se requiere mayor resistencia, ventilación, protección o respaldo eléctrico.</p>
+                <ul class="list-inline">
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i>Primero se define el uso del equipo.</h5></li>
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i>Después se revisa compatibilidad entre componentes.</h5></li>
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i>Finalmente se consideran las condiciones reales de trabajo.</h5></li>
+                </ul>
+            </div>
+            <div class="col-lg-5">
+                <img class="img-fluid w-100" src="img/a.jpg" alt="Imagen de componentes para ensamble de computadora">
+            </div>
+        </div>
+    </div>
+    <!-- Summary End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-5 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Arquitectura</span> CPU</h1>
+                <p class="m-0">Informacion sobre el contenido visto en la materia</p>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">Unidades del curso</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="unidad1.html"><i class="fa fa-angle-right mr-2"></i>Unidad 1: Arquitectura de Cómputo</a>
+                            <a class="text-white mb-2" href="unidad2.html"><i class="fa fa-angle-right mr-2"></i>Unidad 2: CPU</a>
+                            <a class="text-white mb-2" href="unidad3.html"><i class="fa fa-angle-right mr-2"></i>Unidad 3: Componentes</a>
+                            <a class="text-white" href="unidad4.html"><i class="fa fa-angle-right mr-2"></i>Unidad 4: Procesamiento paralelo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">Prácticas</h5>
+                        <p><i class="fa fa-folder mr-2"></i>Carpeta raíz: pdfs</p>
+                        <p><i class="fa fa-file-pdf mr-2"></i>Formato: PDF</p>
+                        <p><i class="fa fa-download mr-2"></i>Acceso: descarga directa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                 <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">Angeline Jaretzi Rojas de la Rosa</a>. Arquitectura de las computadoras.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#lista-practicas">Prácticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="pdfs/">Carpeta PDFs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Unidad 2 - Estructura y funcionamiento de la CPU</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <!-- Topbar Start -->
+    <div class="container-fluid">
+        
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Arquitectura </span> De Computadoras</h1>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+<!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="unidad1.html" class="nav-item nav-link">Unidad 1</a>
+                    <a href="unidad2.html" class="nav-item nav-link">Unidad 2</a>
+                    <a href="unidad3.html" class="nav-item nav-link">Unidad 3</a>
+                    <a href="unidad4.html" class="nav-item nav-link">Unidad 4</a>
+                    <a href="practicas_curso.html" class="nav-item nav-link">Practicas
+                    </a>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->  
+
+
+    <!-- Unit Header Start -->
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                    <h4 class="text-secondary mb-3">Unidad 2</h4>
+                    <h1 class="display-4 mb-4"><span class="text-primary">Estructura</span> y funcionamiento de la <span class="text-secondary">CPU</span></h1>
+                    <h5 class="text-muted mb-3">En esta unidad se estudia cómo se organiza internamente el procesador, cómo utiliza sus registros y cómo ejecuta instrucciones paso a paso.</h5>
+                    <p class="mb-4">La CPU es el componente encargado de interpretar instrucciones, procesar datos y coordinar el trabajo de los demás elementos del sistema. Comprender su estructura permite explicar cómo una computadora transforma instrucciones de software en operaciones reales de hardware.</p>
+                    <ul class="list-inline">
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Organización interna del procesador</h5></li>
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Registros de usuario, control y estado</h5></li>
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Ciclo de instrucción y modos de direccionamiento</h5></li>
+                    </ul>
+                    <a href="#temario-unidad-2" class="btn btn-lg btn-primary mt-3 px-4">Ver temario</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row px-3">
+                        <div class="col-12 p-0">
+                            <img class="img-fluid w-100" src="img/estructura.jpg" alt="Imagen sobre CPU y arquitectura de cómputo">
+                        </div>
+                        <div class="col-6 p-0">
+                            <img class="img-fluid w-100" src="img/c.jpg" alt="Componentes internos del procesador">
+                        </div>
+                        <div class="col-6 p-0">
+                            <img class="img-fluid w-100" src="img/h.webp" alt="Funcionamiento de la CPU">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Unit Header End -->
+
+
+    <!-- Processor Organization Start -->
+    <div class="container py-5" id="temario-unidad-2">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">2.1 Organización del procesador</h4>
+            <h1 class="display-4 m-0"><span class="text-primary">Cómo trabaja</span> la CPU</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <img class="img-fluid w-100" src="img/t.jpg" alt="Organización del procesador">
+            </div>
+            <div class="col-lg-7 px-3 px-lg-5">
+                <p class="mb-4">La organización del procesador describe la forma en que se conectan y coordinan sus componentes internos para ejecutar instrucciones. Incluye la unidad de control, la unidad aritmético-lógica, los registros internos, los buses y los circuitos que permiten mover datos dentro de la CPU.</p>
+                <div class="row py-2">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-4">
+                            <h1 class="fa fa-microchip font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <div>
+                                <h5 class="m-0">Unidad de control</h5>
+                                <p class="m-0">Dirige la ejecución de instrucciones y coordina el flujo de datos entre los componentes internos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-4">
+                            <h1 class="fa fa-calculator font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <div>
+                                <h5 class="m-0">ALU</h5>
+                                <p class="m-0">Realiza operaciones aritméticas y lógicas, como sumas, comparaciones y operaciones booleanas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-4">
+                            <h1 class="fa fa-database font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <div>
+                                <h5 class="m-0">Registros internos</h5>
+                                <p class="m-0">Almacenan temporalmente datos, direcciones, instrucciones y resultados mientras la CPU trabaja.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-4">
+                            <h1 class="fa fa-exchange-alt font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <div>
+                                <h5 class="m-0">Buses internos</h5>
+                                <p class="m-0">Transportan información entre la ALU, los registros, la unidad de control y otros elementos del procesador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Processor Organization End -->
+
+
+    <!-- Registers Start -->
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">2.2 Estructura de registros</h4>
+                <h1 class="display-4 m-0"><span class="text-primary">Memoria rápida</span> dentro de la CPU</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column bg-white mb-2 p-3 p-sm-5 h-100">
+                        <h3 class="fa fa-user display-4 font-weight-normal text-secondary mb-3 text-center"></h3>
+                        <h3 class="mb-3 text-center">2.2.1 Registros visibles para el usuario</h3>
+                        <p>Son registros que pueden ser utilizados directa o indirectamente por el programador mediante instrucciones. Guardan datos, direcciones o valores temporales necesarios para ejecutar programas.</p>
+                        <p class="m-0"><strong>Ejemplo:</strong> registros de propósito general, acumuladores, registros índice y registros base.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column bg-white mb-2 p-3 p-sm-5 h-100">
+                        <h3 class="fa fa-cogs display-4 font-weight-normal text-secondary mb-3 text-center"></h3>
+                        <h3 class="mb-3 text-center">2.2.2 Registros de control y de estado</h3>
+                        <p>Son registros usados por la CPU para controlar la ejecución del programa y registrar condiciones del sistema. Normalmente no se modifican directamente por el usuario.</p>
+                        <p class="m-0"><strong>Ejemplo:</strong> contador de programa, registro de instrucción, registro de estado y apuntador de pila.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column bg-white mb-2 p-3 p-sm-5 h-100">
+                        <h3 class="fa fa-project-diagram display-4 font-weight-normal text-secondary mb-3 text-center"></h3>
+                        <h3 class="mb-3 text-center">2.2.3 Organización de registros reales</h3>
+                        <p>Las CPU reales organizan sus registros de acuerdo con su arquitectura. Algunas tienen pocos registros especializados y otras muchos registros de propósito general.</p>
+                        <p class="m-0"><strong>Ejemplo:</strong> x86, ARM y MIPS usan diferentes cantidades, nombres y funciones de registros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registers End -->
+
+
+    <!-- Instruction Cycle Start -->
+    <div class="container py-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">2.3 El ciclo de instrucción</h4>
+            <h1 class="display-4 m-0">De la <span class="text-primary">instrucción</span> a la ejecución</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-7 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">2.3.1 Ciclo Fetch-Decode-Execute</h4>
+                <p class="mb-4">El ciclo de instrucción es el proceso repetitivo que realiza la CPU para ejecutar un programa. Primero busca una instrucción en memoria, después la interpreta y finalmente realiza la operación indicada.</p>
+                <ul class="list-inline">
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i><strong>Fetch:</strong> la CPU busca la instrucción en memoria usando el contador de programa.</h5></li>
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i><strong>Decode:</strong> la unidad de control interpreta qué operación debe realizarse.</h5></li>
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i><strong>Execute:</strong> se ejecuta la operación, se usan registros o memoria y se guarda el resultado.</h5></li>
+                </ul>
+            </div>
+            <div class="col-lg-5">
+                <img class="img-fluid w-100" src="img/ciclo.webp" alt="Ciclo de instrucción Fetch Decode Execute">
+            </div>
+        </div>
+    </div>
+    <!-- Instruction Cycle End -->
+
+
+    <!-- Pipeline and Instruction Set Start -->
+    <div class="container-fluid bg-light pt-5 pb-4">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">2.3.2 y 2.3.3</h4>
+                <h1 class="display-4 m-0"><span class="text-primary">Segmentación</span> y conjunto de instrucciones</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 h-100">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="img/pepelino.png" alt="Segmentación de instrucciones">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
+                                <h3 class="text-primary mb-3">2.3.2</h3>
+                                <h1 class="display-4 text-white mb-0">Pipeline</h1>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="mb-3">Segmentación de instrucciones</h3>
+                            <p>La segmentación permite dividir la ejecución de instrucciones en etapas para que varias instrucciones avancen al mismo tiempo, cada una en una fase diferente. Esto mejora el rendimiento porque la CPU aprovecha mejor sus recursos internos.</p>
+                            <p class="m-0"><strong>Idea clave:</strong> es similar a una línea de producción: mientras una instrucción se ejecuta, otra se decodifica y otra se busca en memoria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 h-100">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="img/isa.png" alt="Conjunto de instrucciones">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
+                                <h3 class="text-secondary mb-3">2.3.3</h3>
+                                <h1 class="display-4 text-white mb-0">ISA</h1>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="mb-3">Conjunto de instrucciones</h3>
+                            <p>El conjunto de instrucciones define las operaciones que una CPU puede entender y ejecutar. Incluye instrucciones para mover datos, realizar cálculos, comparar valores, controlar saltos y comunicarse con memoria o dispositivos.</p>
+                            <p class="m-0"><strong>Características:</strong> tipos de operaciones, número de operandos, tamaño de instrucciones, formatos y modos de direccionamiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pipeline and Instruction Set End -->
+
+
+    <!-- Addressing Modes Start -->
+    <div class="container py-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">2.3.4 Modos de direccionamiento y formatos</h4>
+            <h1 class="display-4 m-0">Cómo la CPU <span class="text-primary">encuentra los datos</span></h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-4 h-100">
+                    <h3 class="fa fa-dot-circle display-4 font-weight-normal text-secondary mb-3"></h3>
+                    <h4 class="mb-3">Inmediato</h4>
+                    <p class="m-0">El dato aparece directamente dentro de la instrucción. Es rápido porque no requiere buscar el valor en otra dirección.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-4 h-100">
+                    <h3 class="fa fa-memory display-4 font-weight-normal text-secondary mb-3"></h3>
+                    <h4 class="mb-3">Directo</h4>
+                    <p class="m-0">La instrucción contiene la dirección de memoria donde se encuentra el dato que debe utilizarse.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-4 h-100">
+                    <h3 class="fa fa-random display-4 font-weight-normal text-secondary mb-3"></h3>
+                    <h4 class="mb-3">Indirecto</h4>
+                    <p class="m-0">La instrucción apunta a una dirección que contiene otra dirección donde realmente está el dato.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-4 h-100">
+                    <h3 class="fa fa-layer-group display-4 font-weight-normal text-secondary mb-3"></h3>
+                    <h4 class="mb-3">Indexado o relativo</h4>
+                    <p class="m-0">La dirección se calcula combinando un valor base con un desplazamiento, útil para arreglos, ciclos y estructuras de datos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-12">
+                <div class="bg-light p-4 p-sm-5">
+                    <h3 class="mb-3">Formatos de instrucción</h3>
+                    <p class="m-0">El formato de una instrucción indica cómo se distribuyen sus partes: código de operación, operandos, registros, direcciones y bits adicionales de control. Gracias a este formato, la CPU sabe qué operación debe ejecutar y dónde encontrar los datos necesarios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Addressing Modes End -->
+
+
+   <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-5 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Arquitectura</span> CPU</h1>
+                <p class="m-0">Informacion sobre el contenido visto en la materia</p>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">Unidades del curso</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="unidad1.html"><i class="fa fa-angle-right mr-2"></i>Unidad 1: Arquitectura de Cómputo</a>
+                            <a class="text-white mb-2" href="unidad2.html"><i class="fa fa-angle-right mr-2"></i>Unidad 2: CPU</a>
+                            <a class="text-white mb-2" href="unidad3.html"><i class="fa fa-angle-right mr-2"></i>Unidad 3: Componentes</a>
+                            <a class="text-white" href="unidad4.html"><i class="fa fa-angle-right mr-2"></i>Unidad 4: Procesamiento paralelo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">Prácticas</h5>
+                        <p><i class="fa fa-folder mr-2"></i>Carpeta raíz: pdfs</p>
+                        <p><i class="fa fa-file-pdf mr-2"></i>Formato: PDF</p>
+                        <p><i class="fa fa-download mr-2"></i>Acceso: descarga directa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">Angeline Jaretzi Rojas de la Rosa</a>. Arquitectura de las computadoras.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#lista-practicas">Prácticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="pdfs/">Carpeta PDFs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

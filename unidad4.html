@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Unidad 4 - Procesamiento paralelo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+       <!-- Topbar Start -->
+    <div class="container-fluid">
+        
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Arquitectura </span> De Computadoras</h1>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="unidad1.html" class="nav-item nav-link">Unidad 1</a>
+                    <a href="unidad2.html" class="nav-item nav-link">Unidad 2</a>
+                    <a href="unidad3.html" class="nav-item nav-link">Unidad 3</a>
+                    <a href="unidad4.html" class="nav-item nav-link">Unidad 4</a>
+                    <a href="practicas_curso.html" class="nav-item nav-link">Practicas
+                    </a>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->  
+
+
+    <!-- Unit Header Start -->
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                    <h4 class="text-secondary mb-3">Unidad 4</h4>
+                    <h1 class="display-4 mb-4"><span class="text-primary">Procesamiento</span> <span class="text-secondary">paralelo</span></h1>
+                    <h5 class="text-muted mb-3">En esta unidad se estudia cómo una computadora puede dividir tareas en varias partes para ejecutarlas al mismo tiempo y mejorar el rendimiento.</h5>
+                    <p class="mb-4">El procesamiento paralelo permite que varios procesadores, núcleos o unidades de ejecución trabajen de forma simultánea. Esta técnica se utiliza en computadoras modernas, servidores, supercomputadoras, tarjetas gráficas, sistemas en la nube y aplicaciones que requieren alta velocidad de cálculo.</p>
+                    <ul class="list-inline">
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Comprender el concepto de paralelismo en sistemas de cómputo</h5></li>
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Identificar arquitecturas paralelas y sus formas de organización</h5></li>
+                        <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Analizar ventajas, retos y aplicaciones del procesamiento paralelo</h5></li>
+                    </ul>
+                    <a href="#temario-unidad-4" class="btn btn-lg btn-primary mt-3 px-4">Ver contenido</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row px-3">
+                        <div class="col-12 p-0">
+                            <img class="img-fluid w-100" src="img/about-1.jpg" alt="Imagen sobre procesamiento paralelo">
+                        </div>
+                        <div class="col-6 p-0">
+                            <img class="img-fluid w-100" src="img/about-2.jpg" alt="Imagen de procesadores multinúcleo">
+                        </div>
+                        <div class="col-6 p-0">
+                            <img class="img-fluid w-100" src="img/about-3.jpg" alt="Imagen de servidores o cómputo paralelo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Unit Header End -->
+
+
+    <!-- Main Concepts Start -->
+    <div class="container py-5" id="temario-unidad-4">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">Contenido de la unidad</h4>
+            <h1 class="display-4 m-0">Fundamentos del <span class="text-primary">procesamiento paralelo</span></h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-3 p-sm-5 h-100">
+                    <h3 class="fa fa-project-diagram display-3 font-weight-normal text-secondary mb-3"></h3>
+                    <h3 class="mb-3">¿Qué es el procesamiento paralelo?</h3>
+                    <p>Es una forma de procesamiento en la que una tarea se divide en varias partes que pueden ejecutarse al mismo tiempo.</p>
+                    <p class="m-0">En lugar de que un solo procesador resuelva todo de manera secuencial, varios núcleos, procesadores o equipos colaboran para obtener resultados más rápido.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-3 p-sm-5 h-100">
+                    <h3 class="fa fa-microchip display-3 font-weight-normal text-secondary mb-3"></h3>
+                    <h3 class="mb-3">Paralelismo en hardware</h3>
+                    <p>El paralelismo puede lograrse con procesadores multinúcleo, sistemas multiprocesador, tarjetas gráficas, clusters o servidores conectados.</p>
+                    <p class="m-0">Cada unidad de procesamiento ejecuta una parte del trabajo, compartiendo datos o comunicándose con otras unidades.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="d-flex flex-column text-center bg-light mb-2 p-3 p-sm-5 h-100">
+                    <h3 class="fa fa-code-branch display-3 font-weight-normal text-secondary mb-3"></h3>
+                    <h3 class="mb-3">Paralelismo en software</h3>
+                    <p>Para aprovechar el hardware paralelo, los programas deben organizarse en procesos, hilos o tareas que puedan ejecutarse simultáneamente.</p>
+                    <p class="m-0">El sistema operativo y el programador coordinan la distribución del trabajo para evitar conflictos y aprovechar los recursos disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Concepts End -->
+
+
+    <!-- Parallelism Types Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <img class="img-fluid w-100" src="img/feature.jpg" alt="Imagen sobre tipos de procesamiento paralelo">
+                </div>
+                <div class="col-lg-7 px-3 px-lg-5">
+                    <h4 class="text-secondary mb-3">Tipos de paralelismo</h4>
+                    <h1 class="display-4 mb-4">Formas de dividir el <span class="text-primary">trabajo</span></h1>
+                    <p class="mb-4">El procesamiento paralelo puede organizarse de diferentes maneras dependiendo de cómo se dividen los datos, las instrucciones y las tareas. Cada tipo responde a necesidades distintas de rendimiento y complejidad.</p>
+                    <div class="row py-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-database font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Paralelismo de datos</h5>
+                                    <p class="m-0">La misma operación se aplica al mismo tiempo sobre diferentes conjuntos de datos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-tasks font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Paralelismo de tareas</h5>
+                                    <p class="m-0">Diferentes tareas se ejecutan simultáneamente para resolver un mismo problema.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-stream font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Segmentación</h5>
+                                    <p class="m-0">Las instrucciones se dividen en etapas para que varias se procesen al mismo tiempo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="fa fa-network-wired font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <div>
+                                    <h5 class="m-0">Cómputo distribuido</h5>
+                                    <p class="m-0">Varios equipos conectados colaboran para procesar información como si fueran un sistema mayor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Parallelism Types End -->
+
+
+    <!-- Architectures Start -->
+    <div class="container py-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">Arquitecturas paralelas</h4>
+            <h1 class="display-4 m-0">Modelos comunes de <span class="text-primary">organización</span></h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-arrow-right text-secondary mr-2"></i>SISD</h4>
+                        <p>Significa una sola instrucción y un solo dato. Representa el procesamiento tradicional secuencial, donde una CPU ejecuta una instrucción a la vez sobre un dato a la vez.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-layer-group text-secondary mr-2"></i>SIMD</h4>
+                        <p>Significa una sola instrucción y múltiples datos. Es útil cuando se aplica la misma operación a muchos datos, como en gráficos, audio, video o cálculos científicos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-random text-secondary mr-2"></i>MISD</h4>
+                        <p>Significa múltiples instrucciones y un solo dato. Es poco común, pero puede aparecer en sistemas especializados donde varios procesos analizan el mismo dato de formas distintas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body p-4">
+                        <h4 class="card-title"><i class="fa fa-sitemap text-secondary mr-2"></i>MIMD</h4>
+                        <p>Significa múltiples instrucciones y múltiples datos. Es común en procesadores multinúcleo, servidores y supercomputadoras, donde diferentes unidades ejecutan tareas diferentes al mismo tiempo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Architectures End -->
+
+
+    <!-- Hardware Examples Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">Ejemplos de procesamiento paralelo</h4>
+                <h1 class="display-4 m-0">Dónde se usa en la <span class="text-primary">vida real</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex flex-column bg-white p-4 h-100">
+                        <h4><i class="fa fa-microchip text-secondary mr-2"></i>Procesadores multinúcleo</h4>
+                        <p>Un procesador con varios núcleos puede ejecutar más de una tarea al mismo tiempo. Por ejemplo, un núcleo puede atender el navegador mientras otro ejecuta una videollamada o un programa de edición.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex flex-column bg-white p-4 h-100">
+                        <h4><i class="fa fa-tv text-secondary mr-2"></i>GPU o tarjeta gráfica</h4>
+                        <p>Las GPU contienen muchas unidades de procesamiento pequeñas. Son ideales para trabajar con gráficos, inteligencia artificial, simulaciones y cálculos repetitivos sobre grandes cantidades de datos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex flex-column bg-white p-4 h-100">
+                        <h4><i class="fa fa-server text-secondary mr-2"></i>Clusters y servidores</h4>
+                        <p>Un cluster conecta varias computadoras para resolver problemas grandes. Se utiliza en investigación científica, servicios web, análisis de datos, renderizado y procesamiento en la nube.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hardware Examples End -->
+
+
+    <!-- Advantages Start -->
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">Ventajas y retos</h4>
+                <h1 class="display-4 mb-4">Más velocidad, pero también más <span class="text-primary">coordinación</span></h1>
+                <p class="mb-4">El procesamiento paralelo mejora el rendimiento porque permite hacer varias operaciones al mismo tiempo. Sin embargo, no todos los problemas pueden dividirse fácilmente y se requiere coordinación para que las tareas no interfieran entre sí.</p>
+                <ul class="list-inline">
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i>Reduce el tiempo de ejecución de tareas complejas.</h5></li>
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i>Permite procesar grandes volúmenes de datos.</h5></li>
+                    <li><h5><i class="fa fa-check text-secondary mr-3"></i>Aprovecha mejor los procesadores modernos de varios núcleos.</h5></li>
+                    <li><h5><i class="fa fa-exclamation-triangle text-secondary mr-3"></i>Requiere sincronización, comunicación y buena distribución del trabajo.</h5></li>
+                </ul>
+            </div>
+            <div class="col-lg-5">
+                <img class="img-fluid w-100" src="img/feature.jpg" alt="Imagen sobre ventajas y retos del procesamiento paralelo">
+            </div>
+        </div>
+    </div>
+    <!-- Advantages End -->
+
+
+    <!-- Summary Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">Resumen de la unidad</h4>
+                <h1 class="display-4 m-0">Ideas clave del <span class="text-primary">procesamiento paralelo</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-white p-4 h-100">
+                        <h4>Concepto central</h4>
+                        <p class="m-0">El procesamiento paralelo consiste en dividir una tarea para que varias unidades de procesamiento trabajen al mismo tiempo. Su objetivo principal es mejorar velocidad, eficiencia y capacidad de cálculo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-white p-4 h-100">
+                        <h4>Importancia actual</h4>
+                        <p class="m-0">Actualmente es fundamental porque los equipos modernos ya no dependen solo de aumentar la velocidad de un procesador, sino de usar varios núcleos, GPUs y sistemas distribuidos para resolver problemas más grandes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-white p-4 h-100">
+                        <h4>Aplicaciones principales</h4>
+                        <p class="m-0">Se utiliza en videojuegos, edición de video, inteligencia artificial, simulaciones, bases de datos, análisis científico, servidores web, sistemas operativos y procesamiento en la nube.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-white p-4 h-100">
+                        <h4>Reto principal</h4>
+                        <p class="m-0">El mayor desafío es coordinar correctamente las tareas, compartir información sin errores y evitar que unas partes del sistema esperen demasiado a otras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Summary End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-5 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Arquitectura</span> CPU</h1>
+                <p class="m-0">Informacion sobre el contenido visto en la materia</p>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">Unidades del curso</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="unidad1.html"><i class="fa fa-angle-right mr-2"></i>Unidad 1: Arquitectura de Cómputo</a>
+                            <a class="text-white mb-2" href="unidad2.html"><i class="fa fa-angle-right mr-2"></i>Unidad 2: CPU</a>
+                            <a class="text-white mb-2" href="unidad3.html"><i class="fa fa-angle-right mr-2"></i>Unidad 3: Componentes</a>
+                            <a class="text-white" href="unidad4.html"><i class="fa fa-angle-right mr-2"></i>Unidad 4: Procesamiento paralelo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">Prácticas</h5>
+                        <p><i class="fa fa-folder mr-2"></i>Carpeta raíz: pdfs</p>
+                        <p><i class="fa fa-file-pdf mr-2"></i>Formato: PDF</p>
+                        <p><i class="fa fa-download mr-2"></i>Acceso: descarga directa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">Angeline Jaretzi Rojas de la Rosa</a>. Arquitectura de las computadoras.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#lista-practicas">Prácticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="pdfs/">Carpeta PDFs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
